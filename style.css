@@ -19,6 +19,16 @@ body {
 }
 
 /* NAVBAR */
+
+/* NAVBAR ACTIVE LINK */
+.nav-links a.active {
+  color: var(--orange);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
