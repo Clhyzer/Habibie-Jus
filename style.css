@@ -116,6 +116,56 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(255, 107, 0, 0.1); }
   transform: translateY(-2px);
 }
 
+/* DARK MODE TOGGLE BUTTON */
+.dark-toggle {
+  background: none;
+  border: 1.5px solid rgba(255, 107, 0, 0.3);
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dark-toggle:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+/* DARK MODE */
+body.dark {
+  --bg: #1A1A1A;
+  --text: #F0E6D3;
+  --muted: #A89070;
+  --dark: #F0E6D3;
+}
+
+body.dark nav {
+  background: rgba(26, 26, 26, 0.95);
+  border-bottom-color: rgba(255, 107, 0, 0.2);
+}
+
+body.dark .menu-card {
+  background: #2A2A2A;
+  border-color: rgba(255, 107, 0, 0.15);
+}
+
+body.dark .img-wrapper {
+  background: #333;
+}
+
+body.dark .lokasi-section {
+  background: linear-gradient(135deg, #2A1A00, #1A1A1A);
+}
+
+body.dark footer {
+  background: #111;
+}
+
+body.dark .hero-bg {
+  background: radial-gradient(ellipse 70% 80% at 70% 50%, #3D2500 0%, #1A1A1A 60%);
+}
+
 /* HERO */
 .hero {
   min-height: 100vh;

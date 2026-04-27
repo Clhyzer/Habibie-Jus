@@ -32,3 +32,23 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+// DARK MODE
+function toggleDark() {
+  document.body.classList.toggle('dark');
+  const btn = document.getElementById('darkBtn');
+  
+  if (document.body.classList.contains('dark')) {
+    btn.textContent = '☀️';
+    localStorage.setItem('darkMode', 'on');
+  } else {
+    btn.textContent = '🌙';
+    localStorage.setItem('darkMode', 'off');
+  }
+}
+
+// Cek dark mode tersimpan
+if (localStorage.getItem('darkMode') === 'on') {
+  document.body.classList.add('dark');
+  document.getElementById('darkBtn').textContent = '☀️';
+}
